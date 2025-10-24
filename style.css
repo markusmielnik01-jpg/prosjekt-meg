@@ -27,6 +27,9 @@ img {
 
 /* CSS RESET SLUTT */
 
+body{
+    background-color: blanchedalmond;
+}
 
 /* NAVBAR START */
 .nav {
@@ -55,13 +58,66 @@ img {
 
 /* NAVBAR SLUTT */
 
+/* OM MEG */
 
+main{
+    background-color: rgb(26, 85, 175);
+    width: 80%;
+    height: 600px;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px black;
+}
+
+
+
+.tekst{
+    color: white;
+    display: flex;
+    flex: 1;
+    padding-inline: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+
+}
+
+.img-meg{
+    width: 400px;
+    aspect-ratio: 3/4;
+    align-self: center;
+    justify-self: center;
+}
+
+.smil{
+    font-size: 50px;
+}
 
 /* TIMEPLAN START*/
 h1 {
     text-align: center;
     font-size: 50px;
     padding: 40px;
+    color: white;
+}
+
+.h {
+    background-color: rgb(26, 85, 175);
+    color: white;
+    width: 100%;
+    height: 130px;
+    margin: 50px auto;
+}
+
+.overskrift {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    font-size: 35px;
 }
 
 .timeplan {
@@ -123,15 +179,7 @@ td {
     background-color: powderblue;
 }
 
-.h1 {
-    background-color: rgb(26, 85, 175);
-    border: 0px;
-    border-radius: 10px;
-    color: white;
-    padding: 15px;
-    width: fit-content;
-    margin: 30px auto;
-}
+    
 
 /* TIMEPLAN SLUTT */
 
@@ -149,10 +197,15 @@ footer p {
     grid-column: span 2;
 }
 
-footer li, p {
+footer li, p{
     color: white;
     padding-top: 20px;
     font-size: 17px;
+}
+
+.h2-footer{
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 .ul-footer {
