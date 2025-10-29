@@ -71,7 +71,7 @@ main{
     margin: 0 auto;
     margin-bottom: 75px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -91,13 +91,36 @@ main{
     aspect-ratio: 3/4;
     align-self: center;
     justify-self: center;
+    object-fit: cover;
 }
+
 
 .smil{
     font-size: 50px;
 }
 
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.card{
+    border: 2px rgb(26, 85, 175);
+    border-collapse: collapse;
+    gap: 15px;
+    height: 300px;
+}
+
+.card img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* OM MEG SLUTT */
+
 /* TIMEPLAN START*/
+
 h1 {
     text-align: center;
     font-size: 50px;
@@ -179,7 +202,22 @@ td {
     background-color: powderblue;
 }
 
-    
+.tekstboks{
+    width: 70%;
+    height: auto;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgb(26, 85, 175);
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.tekstboks li{
+    padding-bottom: 20px;
+}
 
 /* TIMEPLAN SLUTT */
 
