@@ -27,7 +27,13 @@ img {
 
 /* CSS RESET SLUTT */
 
-body{
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+body {
     background-color: blanchedalmond;
 }
 
@@ -60,9 +66,9 @@ body{
 
 /* OM MEG */
 
-main{
+main {
     background-color: rgb(26, 85, 175);
-    width: 80%;
+    width: 90%;
     height: 600px;
     justify-content: center;
     text-align: center;
@@ -76,7 +82,7 @@ main{
 
 
 
-.tekst{
+.tekst {
     color: white;
     display: flex;
     flex: 1;
@@ -86,7 +92,7 @@ main{
 
 }
 
-.img-meg{
+.img-meg {
     width: 400px;
     aspect-ratio: 3/4;
     align-self: center;
@@ -95,29 +101,65 @@ main{
 }
 
 
-.smil{
+.smil {
     font-size: 50px;
 }
 
-.gridbox{
+.gridbox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
+    width: 90%;
 }
 
-.card{
-    border: 2px rgb(26, 85, 175);
-    border-collapse: collapse;
-    gap: 15px;
-    height: 300px;
+.card {
+    gap: 10px;
+    height: 400px;
 }
 
-.card img{
+.card img {
     aspect-ratio: 1/1;
     object-fit: cover;
+    height: 300px;
+    margin: 0 auto;
+    border: 7px solid rgb(26, 85, 175);
+    border-radius: 10px;
+    border-collapse: collapse;
 }
 
 /* OM MEG SLUTT */
+
+/* BILDEGALLERI START */
+
+.galleri-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.grid-item {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 8px;
+
+}
+
+.grid-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fullwidth {
+    grid-column: 1 / -1;
+    height: 550px;
+    object-fit: cover;
+}
+
 
 /* TIMEPLAN START*/
 
@@ -202,8 +244,8 @@ td {
     background-color: powderblue;
 }
 
-.tekstboks{
-    width: 70%;
+.tekstboks {
+    width: 100%;
     height: auto;
     padding-bottom: 40px;
     margin: 0 auto;
@@ -215,7 +257,7 @@ td {
     font-size: 20px;
 }
 
-.tekstboks li{
+.tekstboks li {
     padding-bottom: 20px;
 }
 
@@ -235,13 +277,14 @@ footer p {
     grid-column: span 2;
 }
 
-footer li, p{
+footer li,
+p {
     color: white;
     padding-top: 20px;
     font-size: 17px;
 }
 
-.h2-footer{
+.h2-footer {
     padding-top: 20px;
     margin: 0 auto;
 }
