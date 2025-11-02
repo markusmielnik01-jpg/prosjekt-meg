@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 /* CSS RESET */
 * {
     box-sizing: border-box;
@@ -364,7 +365,8 @@ p {
 
 .ul-footer {
     display: flex;
-    flex-direction: row;
+    /* stack footer items vertically instead of side-by-side */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -372,11 +374,17 @@ p {
     margin: 0;
 }
 
-/* ensure all footer lists are normalized */
-footer ul {
+/* ensure all footer lists are normalized and have identical layout */
+footer>ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    /* make both footer columns behave the same (vertical stack, centered) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 footer ul li {
